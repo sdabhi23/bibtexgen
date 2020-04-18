@@ -127,3 +127,12 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# poetry
+poetry.lock
+
+# vscode environment
+.vscode
+
+# development artifacts
+*.bib
