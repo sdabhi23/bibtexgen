@@ -12,6 +12,3 @@ flake8 = "*"
 requests = "*"
 beautifulsoup4 = "*"
 tqdm = "*"
-
-[requires]
-python_version = "^3.5"
