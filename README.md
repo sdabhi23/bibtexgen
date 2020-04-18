@@ -21,18 +21,32 @@ Successfully installed bibtexgen-0.0.1
 
 ## Usage
 
-```bash
-$ bibtexgen
+* As cli tool:
+
+    ```bash
+    $ bibtexgen
 
 
-================================= Welcome to BibTex Generator =================================
+    ================================= Welcome to BibTex Generator =================================
 
 
-Please enter the Sematic Scholar Id of your paper: 6258b37b8d517f121c844ebad226da472761adc6
+    Please enter the Sematic Scholar Id of your paper: 6258b37b8d517f121c844ebad226da472761adc6
 
-Creating file 6258b37b8d517f121c844ebad226da472761adc6_references.bib
+    Creating file 6258b37b8d517f121c844ebad226da472761adc6_references.bib
 
-100%|████████████████████████████████████████████████████████████████████████████████████| 8/8 [00:21<00:00,  2.63s/papers]
+    100%|████████████████████████████████████████████████████████████████████████████████████| 8/8 [00:21<00:00,  2.63s/papers]
 
-Your references have been saved!
-```
+    Your references have been saved!
+    ```
+
+* Programmatically:
+
+    ```python
+    from bibtexgen import bibtex
+    from pprint import pprint
+
+    b = bibtex()
+    r = b.generate_references('6258b37b8d517f121c844ebad226da472761adc6')
+
+    pprint(r)
+    ```
