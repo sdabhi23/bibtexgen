@@ -1,0 +1,32 @@
+name: publish to pypi
+
+on:
+  release:
+    types: [created]
+
+jobs:
+  deploy:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python
+      uses: actions/setup-python@v1
+      with:
+        python-version: '3.x'
+    - name: Install poetry
+      run: |
+        curl -sSL https://raw.githubusercontent.com/sdispater/poetry/master/get-poetry.py | python
+    - name: Install dependencies
+      run: |
+        source $HOME/.poetry/env
+        poetry install
+    - name: Build package
+      run: |
+        source $HOME/.poetry/env
+        poetry build
+    - name: Publish package
+      run: |
+        source $HOME/.poetry/env
+        poetry publish --username ${{ secrets.PYPI_USERNAME }} --password ${{ secrets.PYPI_PASSWORD }}

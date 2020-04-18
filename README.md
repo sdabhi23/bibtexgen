@@ -1,6 +1,7 @@
 # BibtexGen
 
-![test](https://github.com/sdabhi23/bibtexgen/workflows/test/badge.svg)
+Test: ![test](https://github.com/sdabhi23/bibtexgen/workflows/test/badge.svg)
+Publish: ![publish](https://github.com/sdabhi23/bibtexgen/workflows/publish/badge.svg)
 
 A simple cli tool to generate a list of references of any paper available on Semantic Scholar as a .bib file.
 
@@ -36,7 +37,7 @@ Successfully installed bibtexgen-0.0.1
 
     Creating file 6258b37b8d517f121c844ebad226da472761adc6_references.bib
 
-    100%|████████████████████████████████████████████████████████████████████████████████████| 8/8 [00:21<00:00,  2.63s/papers]
+    100%|█████████████████████████████████████████████████████████| 8/8 [00:21<00:00,  2.63s/papers]
 
     Your references have been saved!
     ```
