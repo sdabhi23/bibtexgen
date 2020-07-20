@@ -1,5 +1,6 @@
 # BibtexGen
 
+**This project is not being maintained actively**
 
 [![PyPi Version](https://img.shields.io/pypi/v/bibtexgen.svg)](https://pypi.org/project/bibtexgen/)
 [![PyPi License](https://img.shields.io/pypi/l/bibtexgen.svg)](https://pypi.org/project/bibtexgen/)
@@ -7,10 +8,12 @@
 [![PyPi Format](https://img.shields.io/pypi/format/bibtexgen.svg)](https://pypi.org/project/bibtexgen/)
 
 | Continuous Integration | Continuous Delivery |
-|:--------:|:-----:|
+|:----------------------:|:-------------------:|
 | ![test](https://github.com/sdabhi23/bibtexgen/workflows/test/badge.svg) | ![publish to pypi](https://github.com/sdabhi23/bibtexgen/workflows/publish%20to%20pypi/badge.svg) |
 
 A simple cli tool to generate a list of references of any paper available on Semantic Scholar as a .bib file.
+
+This tool was built during internship at Robert Bosch Engineering and Business Solutions (RBEI).
 
 ## Installation
 
