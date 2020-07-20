@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "bibtexgen"
-version = "0.0.1"
+version = "0.0.2"
 description = "A tool to quickly export all references to bibtex"
 authors = ["Shrey Dabhi <shrey.dabhi23@gmail.com>"]
 license = "MIT"
