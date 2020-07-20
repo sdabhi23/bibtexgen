@@ -4,6 +4,7 @@ version = "0.0.1"
 description = "A tool to quickly export all references to bibtex"
 authors = ["Shrey Dabhi <shrey.dabhi23@gmail.com>"]
 license = "MIT"
+readme = "README.md"
 repository = "https://github.com/sdabhi23/bibtexgen"
 
 [tool.poetry.dependencies]
